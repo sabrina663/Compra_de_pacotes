@@ -5,5 +5,6 @@ if(empty($_POST['nome'])){
     die();
 }
 $_SESSION['acesso'] = 'sim';
+$_SESSION['client'] = $_POST['nome'];
 header('location: pacotes.php')
 ?>

@@ -83,6 +83,14 @@ form input{
     color:#fff;
     border:1px solid black;
 }
+/* pacotes */
+.div-welcome{
+    margin:15px 0px;
+    padding: 15px 0px;
+    text-align: center;
+    color:#141414;
+    font-size: 1.5em;
+}
 .container-pacotes{
     width:100%;
     height:100%;
