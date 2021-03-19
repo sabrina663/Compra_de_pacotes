@@ -84,11 +84,11 @@ form input{
     border:1px solid black;
 }
 /* pacotes */
-.div-welcome{
+.div-text{
     margin:15px 0px;
     padding: 15px 0px;
     text-align: center;
-    color:#141414;
+    color:#032068;
     font-size: 1.5em;
 }
 .container-pacotes{
@@ -156,4 +156,51 @@ form input{
     text-align: center;
     background-color: #355cbd;
     color:#fff;
+}
+.sec-btn-back{
+    text-align: center;
+    padding:20px 0px;
+}
+.sec-btn-back button{
+    background-color: red;
+    padding: 15px 40px;
+    border:1px solid white;
+    color:white;
+}
+.container-page{
+    height: 83.4vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px 5px;
+    flex-direction: column;
+}
+.container-page form{
+    display:flex;
+    flex-direction: center;
+    width:40%;
+    flex-direction: column;
+}
+.container-page form input{width:100%; margin-bottom:30px;}
+.container-page form button{
+    width:100%;
+    padding:15px 0px;
+    background-color: green;
+    border:1px solid green;
+    color:white;
+}
+.cont-process{
+    height:90vh;
+}
+.sec-process h2.true{
+    color:green;
+    font-size:2.5em;
+}
+.sec-process h2.false{
+    color:red;
+    font-size:2.5em;
+}
+.valor_false{
+    position: relative;
+    bottom:20px;
 }

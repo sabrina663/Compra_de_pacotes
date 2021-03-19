@@ -1,7 +1,7 @@
 <?
     session_start();
     if(!isset($_SESSION['acesso']) || $_SESSION['acesso'] != 'sim'){
-        header("location:index.php");
+        header("location:../index.php");
         exit();
     }
 ?>
@@ -9,15 +9,17 @@
 <html>
 <head lang='pt-br'>
     <meta charset='UTF-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel='stylesheet' href='_css/style.css'>
-    <title>Landing Page</title>
+    <link rel='stylesheet' href='../_css/style.css'>
+    <title>Landing page</title>
 </head>
 <body>
     <?
-        require_once('cabecalho.php');
+        require_once('../page/cabecalho.php');
     ?>
-    <div class='div-welcome'>
+    <div class='div-text'>
         <h2>Seja Bem-Vindo(a) <?echo $_SESSION['client'];?>.</h2>
     </div>
     <div class="container-pacotes">
@@ -38,7 +40,9 @@
                     <p>R$ 15,90</p>
                 </section>
                 <section class='sec-btn'>
-                    <button>Comprar</button>
+                    <a href='form.php?pacote=Básico'>
+                        <button>Comprar</button>
+                    </a>
                 </section>
             </section><!-- sec-pack -->
             <section class='sec-pack'>
@@ -57,7 +61,9 @@
                     <p>R$ 20,90</p>
                 </section>
                 <section class='sec-btn'>
-                    <button>Comprar</button>
+                    <a href='form.php?pacote=Padrão'>
+                        <button>Comprar</button>
+                    </a>
                 </section>
             </section><!-- sec-pack -->
             <section class='sec-pack'>
@@ -76,10 +82,20 @@
                     <p>R$ 30,90</p>
                 </section>
                 <section class='sec-btn'>
-                    <button>Comprar</button>
+                    <a href='form.php?pacote=Premium'>
+                        <button>Comprar</button>
+                    </a>
                 </section>
             </section><!-- sec-pack -->
-        </div>
+        </div><!-- parent -->
+        <section class='sec-btn-back'>
+            <a href='sair.php'>
+                <button>Voltar</button>
+            </a>
+        </section><!-- sec-btn -->
     </div><!-- container-pacotes -->
+    <?
+        require_once("../page/footer.php");
+    ?>
 </body>
 </html>
