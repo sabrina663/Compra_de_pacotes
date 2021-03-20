@@ -1,5 +1,5 @@
 *{margin:0%;padding:0%;box-sizing: border-box;}ul{list-style: none;}a{text-decoration: none;color:rgb(211, 209, 209);}body{background-color: #ccc;}
-
+body,html{font-family:Arial, Helvetica, sans-serif; height:100%;min-width:303px;}
 .header{
     width:100%;
     display:flex;
@@ -11,31 +11,10 @@
 .sec-title{
     color:#fff;
 }
-nav{
-    position: absolute;
-    right: 10px;
-    display: flex;
-    justify-content: flex-end;
-}
-nav ul{
-    display: flex;
-}
-nav li a{
-    display:block;
-    color: #fff;
-    padding:10px 15px;
-}
-nav li a i{
-    font-size: 1.3em;
-}
-nav li a:hover{
-    background-color: #032068;
-    color: rgb(221, 219, 219);
-}
 .container{
     width:100%;
     background-image: url(../_imagens/1.jpg);
-    height:100vh;
+    height:100%;
     width:100%;
     object-fit: cover;
     background-size:cover;
@@ -50,18 +29,21 @@ nav li a:hover{
     text-align: center;
     justify-content: center;
     flex-direction: column;
+    padding: 10px 0px;
 }
 .info h1{
     color:#355cbd;
     padding:10px 0px;
-    font-size: 2.8em;
+    font-size: 2.2em;
 }
 .sec-p{
     width:50%;
     line-height: 20px;
-    font-size:1.0em;
     padding: 10px 5px;
     margin:10px 0px
+}
+.sec-p p{
+    font-size:1.0em;
 }
 form{
     margin:20px 0px 0px 0px;
@@ -77,7 +59,7 @@ form input{
     outline: none;
 }
 .sec-btn button{
-    padding:15px 20px;
+    padding:10px 15px;
     outline: none;
     background-color: orange;
     color:#fff;
@@ -93,7 +75,6 @@ form input{
 }
 .container-pacotes{
     width:100%;
-    height:100%;
     padding: 10px 15px;
 }
 .parent{
@@ -114,10 +95,10 @@ form input{
     text-align: center;
     margin:10px 10px;
 }
-.sec-pack h2{
+h2{
     margin-bottom:15px;
-    color:#355cbd;
-    font-size: 1.6em;
+    color:#032068;
+    font-size: 1.3em;
 }
 .sec-pack .sec-ul li{
     font-size: 1.1em;
@@ -168,7 +149,7 @@ form input{
     color:white;
 }
 .container-page{
-    height: 83.4vh;
+    height:100%;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -180,6 +161,7 @@ form input{
     flex-direction: center;
     width:40%;
     flex-direction: column;
+    padding: 10px 0px;
 }
 .container-page form input{width:100%; margin-bottom:30px;}
 .container-page form button{
@@ -194,11 +176,9 @@ form input{
 }
 .sec-process h2.true{
     color:green;
-    font-size:2.5em;
 }
 .sec-process h2.false{
     color:red;
-    font-size:2.5em;
 }
 .valor_false{
     position: relative;

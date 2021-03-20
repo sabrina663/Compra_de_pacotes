@@ -23,7 +23,7 @@
         <div class='info'>
             <h1>Lorem ipsum dolor</h1>
             <section class='sec-p'>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt maxime at odit ad repudiandae similique, suscipit earum deserunt molestias ea nisi architecto corporis, molestiae nemo facilis, harum doloribus. Eaque, magni.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <section>
             <form method='post' action='sistema/analise.php'>
                 <input type='text' name='nome' placeholder='Seu Nome'>
