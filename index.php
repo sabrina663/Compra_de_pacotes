@@ -1,7 +1,8 @@
 <?
     session_start();
     if(isset($_SESSION['acesso'])){
-        header('location:sistema/pacotes.php');
+        header('location:sistema/index.php');
+        
         die();
     }
 ?>
