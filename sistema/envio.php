@@ -32,11 +32,8 @@ try{
     if($mail->send()){
         header('location:processo.php?valor=true');
         $_SESSION['validacao'] = 'sim';
-    }else{
-        header('location:processo.php?valor=false');
     }
 }catch(Exception $e){
-    echo 'Erro ao Enviar o E-mail <br>';
-    echo '{$mail->$ErrorInfo}';
+    header('location:processo.php?valor=false');
 }
 ?>

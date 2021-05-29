@@ -28,7 +28,7 @@
         <?
         if(isset($_GET['valor']) && $_GET['valor'] == 'false'){?>
             <section class='sec-process'>
-                <h2 class='false'>Não foi possivel realizar o envio</h2>
+                <h2 class='false'>Não foi possivel realizar o pedido</h2>
             </section>
         <?}?>
         <section class='sec-btn-back'>
