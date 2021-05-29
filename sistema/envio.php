@@ -30,7 +30,6 @@ try{
     $mail->Body = 'Pacote de desejo <strong>'.$_SESSION['pacote'].'</strong>';
     $mail->AltBody = 'Pacote de desejo '.$_SESSION['pacote'] ;
     if($mail->send()){
-        $_SESSION['validacao'] = 'sim';
         header('location:processo.php?valor=true');
     }
 }catch(Exception $e){
